@@ -1,1 +1,0 @@
-"# gaudium_demo" 
