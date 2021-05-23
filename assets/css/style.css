@@ -8,6 +8,11 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+@font-face {
+  font-family: avo;
+  src: url('../fonts/vni-avo/vni.common.VAVON.ttf');
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -112,7 +117,7 @@ h1, h2, h3, h4, h5, h6 {
 #header {
   transition: all 0.5s;
   z-index: 997;
-  padding-top: 30px;
+  padding-top: 42px;
   padding-bottom: 20px;
 }
 
@@ -135,7 +140,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo img {
-  max-height: 61px;
+  width: 200px;
+  height: 55px;
 }
 
 /*--------------------------------------------------------------
@@ -166,6 +172,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
   padding: 10px 0 10px 30px;
   font-size: 18px;
+  line-height: 27px;
   font-weight: 700;
   color: #fff;
   white-space: nowrap;
@@ -382,7 +389,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero .down-arrow {
   position: absolute;
   width: 44px;
-  top: 85%;
+  top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -1782,13 +1789,13 @@ section {
 /* carousel */
 .carousel-control-next-icon {
   width: 52px;
-  background-image: url("../icon/right-arrow\ \(1\)\ 2.png");
+  background-image: url("../icon/right-arrow\ \(1\)\.png");
   background-size: 52px 52px;
 }
 
 .carousel-control-prev-icon {
   width: 52px;
-  background-image: url("../icon/right-arrow\ \(1\)\ 1.png");
+  background-image: url("../icon/left-arrow\ \(0\)\.png");
   background-size: 52px 52px;
 }
 
@@ -1811,4 +1818,19 @@ section {
 
 input:focus{
   outline: none;
+}
+
+
+.testhover {
+  padding: 32px 0;
+  height: 100px;
+  position: relative;
+  transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  overflow: hidden;
+}
+.testhover:hover {
+  height: 350px;
+  padding: 32px 20px;
+  background-color: #fff;
 }
