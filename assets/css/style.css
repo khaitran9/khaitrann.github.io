@@ -10,7 +10,7 @@
 --------------------------------------------------------------*/
 @font-face {
   font-family: avo;
-  src: url('../fonts/vni-avo/vni.common.VAVON.ttf');
+  src: url('../fonts/vni-avo/SVN-Avo.ttf');
 }
 
 body {
@@ -399,7 +399,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 715px;
   height: 138px;
   text-align: center; 
-  top: 45%; 
+  top: 55%; 
   left: 50%; 
   transform: translate(-50%, -50%);
   color: #fff;
