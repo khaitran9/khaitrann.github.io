@@ -125,6 +125,18 @@ h1, h2, h3, h4, h5, h6 {
   background: #0F1232;
 }
 
+/* #header.header-scrolled a.logo {
+  display: none;
+}
+
+#header.header-scrolled div {
+  display: block;
+} */
+
+#header div {
+  display: none;
+}
+
 #header .logo {
   font-size: 30px;
   margin: 0;
@@ -301,14 +313,36 @@ h1, h2, h3, h4, h5, h6 {
   /* .mobile-nav-toggle {
     display: block;
   } */
+  #header {
+    padding: 0;
+  }
+  #header.header-scrolled a.logo {
+    display: none;
+  }
+  
+  #header.header-scrolled div {
+    display: block;
+  }
   #header .logo {
     margin: 0 auto;
+    margin-top: 5px;
   }
   .navbar ul {
     display: none;
   }
+  #hero-img {
+    display: none !important;
+  }
+  #hero-img-mobile {
+    display: block !important;
+  }
   #hero h1 {
     width: 380px !important;
+    height: auto !important;
+  }
+  #hero .down-arrow {
+    width: 34px !important;
+    top: 85% !important;
   }
   .footer-bottom {
     flex-direction: column;
@@ -323,6 +357,12 @@ h1, h2, h3, h4, h5, h6 {
   .services_padding {
     padding: 0 !important;
   }
+  #services .section-title {
+    padding-top: 30px !important;
+  }
+  #services .row {
+    margin: 0 !important;
+  }
   #footer {
     padding: 0 !important;
   }
@@ -332,14 +372,33 @@ h1, h2, h3, h4, h5, h6 {
   #portfolio-details {
     display: block;
   }
+  
   .box_info_container {
     flex-direction: column;
   }
+  #library .section-title {
+    padding: 40px 0 !important;
+  }
+
+  #library .section-title h2{
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  #library .services_padding {
+    padding: 0 20px !important;
+  }
+
+  .back-to-top img {
+    width: 60px;
+    height: 54px;
+  }
+
+  #discover {
+    margin-bottom: 100px !important;
+  }
 }
 
-.services-box {
-  
-}
 
 
 .navbar-mobile {
@@ -438,7 +497,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero .down-arrow {
   position: absolute;
   width: 44px;
-  top: 90%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -464,7 +523,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 991px) {
   #hero {
-    height: 100vh;
+    /* height: 100vh; */
     text-align: center;
   }
   #hero .animated {

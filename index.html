@@ -40,8 +40,11 @@
           <li><a class="nav-link scrollto active" href="#services">Dịch vụ</a></li>
           <li><a class="nav-link scrollto" href="#library">Thư viện</a></li>
         </ul>
-        <!-- <i class="bi bi-list mobile-nav-toggle"></i> -->
       </nav>
+    </div>
+    <nav id="navbar-m" class="container d-flex align-items-center">
+      <div style="flex: 1; text-align: center; border-right: 1px solid #fff;"><a class="nav-link scrollto active" style=" color: #fff; font-family: avo;" href="#services">Dịch vụ</a></div>
+      <div style="flex: 1; text-align: center;"><a class="nav-link scrollto"  style=" color: #fff; font-family: avo;" href="#library">Thư viện</a></div>
     </div>
   </header>
   <!-- End Header -->
@@ -50,8 +53,9 @@
   <section id="hero" class="d-flex align-items-center">
     <div class="container-fluid">
       <div class="row" style="position: relative;">
-        <div class="col-lg-12 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1">
-          <img src="assets/img/BACKGROUND.jpg" style="height: 100vh;">
+        <div class="col-lg-12 d-flex flex-column justify-content-center pt-lg-0 order-2 order-lg-1">
+          <img id="hero-img" src="assets/img/BACKGROUND.jpg" style="height: 100vh;">
+          <img id="hero-img-mobile" src="assets/Mobile/Ban.jpg" style="width: 100%; display: none;">
           <h1 data-aos="zoom-in" data-aos-delay="100">Your business and finance management partner.</h1>
           <a class="nav-link scrollto" href="#comments">
             <img src="assets/icon/down-arrow.png" class="img-fluid down-arrow" alt="" data-aos="fade-up" data-aos-delay="200">
@@ -330,7 +334,7 @@
           </div>
 
           <div class="row" style="margin-top: 50px;">
-            <div class="col-lg-12" style="margin-bottom: 20px;">
+            <!-- <div class="col-lg-12" style="margin-bottom: 20px;">
                 <div class="member d-flex align-items-start" style="padding: 0;" data-aos="zoom-in" data-aos-delay="100">
                   <div class="row">
                     <div class="col-lg-6 col-md-6">
@@ -374,7 +378,7 @@
                     </div>
                   </div>
                 </div>
-            </div>
+            </div> -->
 
             <div class="col-lg-4 mt-4">
               <div class="align-items-start" style="padding: 0px;" data-aos="zoom-in" data-aos-delay="100">
@@ -573,7 +577,7 @@
           </div>
         </div>
         <div style="text-align: center">
-          <button type="button" style="width: 250px;
+          <button id="discover" type="button" style="width: 250px;
               height: 50px;
               background: #0F1232; font-family: Times New Roman;
               font-style: normal;
