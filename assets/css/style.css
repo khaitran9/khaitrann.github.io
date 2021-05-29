@@ -133,15 +133,15 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   letter-spacing: 2px;
   text-transform: uppercase;
-}
-
-#header .logo a {
-  color: #fff;
+  margin-left: 15px;
 }
 
 #header .logo img {
   width: 200px;
-  height: 55px;
+}
+
+#header nav a {
+  font-family: avo;
 }
 
 /*--------------------------------------------------------------
@@ -293,6 +293,55 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.services_padding {
+  padding: 0 166px; margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  /* .mobile-nav-toggle {
+    display: block;
+  } */
+  #header .logo {
+    margin: 0 auto;
+  }
+  .navbar ul {
+    display: none;
+  }
+  #hero h1 {
+    width: 380px !important;
+  }
+  .footer-bottom {
+    flex-direction: column;
+  }
+  .logo-bottom {
+    display: none;
+  }
+  .services-box {
+    left: 0 !important;
+    margin-left: 0 !important;
+  }
+  .services_padding {
+    padding: 0 !important;
+  }
+  #footer {
+    padding: 0 !important;
+  }
+  #comments {
+    display: none;
+  }
+  #portfolio-details {
+    display: block;
+  }
+  .box_info_container {
+    flex-direction: column;
+  }
+}
+
+.services-box {
+  
+}
+
+
 .navbar-mobile {
   position: fixed;
   overflow: hidden;
@@ -316,7 +365,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top: 55px;
   right: 15px;
-  bottom: 15px;
+  /* bottom: 15px; */
   left: 15px;
   padding: 10px 0;
   border-radius: 10px;
@@ -804,6 +853,7 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+
 .services .icon-box {
   /* box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1); */
   padding: 50px;
@@ -995,10 +1045,11 @@ section {
 --------------------------------------------------------------*/
 .portfolio-details {
   padding-top: 40px;
+  display: none;
 }
 
 .portfolio-details .portfolio-details-slider img {
-  width: 100%;
+  /* width: 100%; */
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination {
@@ -1602,7 +1653,9 @@ section {
 --------------------------------------------------------------*/
 #footer {
   font-size: 14px;
-  background: #37517e;
+  background: #0F1232; 
+  border-top: 7px solid #D8BA8F; 
+  padding: 0 166px;
 }
 
 #footer .footer-newsletter {
