@@ -280,8 +280,42 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.services-box {
+  background-image: url('../img/shape-02.png'); 
+  background-size: 100%;
+  background-repeat: no-repeat; 
+  position: relative; 
+  min-width: 385px; 
+}
+
+.services-box img {
+  position: absolute; 
+  right: 50px; 
+  top: 40px;
+}
+
+.services-box h4 {
+  font-family: Times New Roman;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 34px;
+  color: #D8BA8F;
+  margin-top: 20px;
+}
+
+.services-box p {
+  font-family: Times New Roman;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
 .services_padding {
-  padding: 0 166px; margin: 0 auto;
+  padding: 0 166px; 
+  /* margin: 0 auto; */
 }
 
 @media (max-width: 768px) {
@@ -341,13 +375,8 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
   }
   
-
-  .footer-bottom {
-    flex-direction: column;
-    height: auto !important;
-  }
-  .logo-bottom {
-    display: none;
+  .services {
+    background-image: url('../Mobile/banner_dvu.jpg') !important;
   }
   .services-box {
     left: 0 !important;
@@ -361,6 +390,22 @@ h1, h2, h3, h4, h5, h6 {
   }
   #services .row {
     padding-top: 0 !important;
+  }
+  .services-box h4 {
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .services-box p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    height: auto !important;
+  }
+  .logo-bottom {
+    display: none;
   }
   #footer {
     padding: 0 !important;
@@ -509,8 +554,12 @@ section {
 }
 
 .section-title h2 {
-  font-size: 32px;
+  font-family: Times New Roman;
+  font-style: normal;
   font-weight: bold;
+  font-size: 34px;
+  line-height: 39px;
+  text-align: center;
   text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -518,30 +567,21 @@ section {
   color: #fff;
 }
 
-/* .section-title h2::before {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 120px;
-  height: 1px;
-  background: #ddd;
-  bottom: 1px;
-  left: calc(50% - 60px);
-}
-
-.section-title h2::after {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 40px;
-  height: 3px;
-  background: #47b2e4;
-  bottom: 0;
-  left: calc(50% - 20px);
-} */
-
 .section-title p {
   margin-bottom: 0;
+}
+
+#services .section-title {
+  width: 100%; 
+  text-align: center; 
+  padding-top: 100px;
+  height: 40px;
+  font-family: Times New Roman;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 39px;
+  margin-bottom: 60px;
 }
 
 /*--------------------------------------------------------------
@@ -820,14 +860,17 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+.services {
+  background-image: url('../img/Slice7.jpg'); 
+  background-size: 428px 275px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 100px;
+}
 
 .services .icon-box {
-  /* box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1); */
   padding: 50px;
   transition: all ease-in-out 0.4s;
-  /* background: #fff; */
-  /* width: 385px;
-  height: 283px; */
 }
 
 .services .icon-box .icon {
@@ -840,22 +883,22 @@ section {
   transition: 0.3s;
 }
 
-.services .icon-box h4 {
+/* .services .icon-box h4 {
   font-weight: 500;
   margin-bottom: 15px;
   font-size: 24px;
-}
+} */
 
 .services .icon-box h4 a {
   color: #37517e;
   transition: ease-in-out 0.3s;
 }
 
-.services .icon-box p {
+/* .services .icon-box p {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
-}
+} */
 
 .services .icon-box:hover {
   transform: translateY(-10px);
