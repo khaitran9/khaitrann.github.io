@@ -121,39 +121,16 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 20px;
 }
 
-#header.header-scrolled, #header.header-inner-pages {
-  background: #0F1232;
-}
-
-/* #header.header-scrolled a.logo {
-  display: none;
-}
-
-#header.header-scrolled div {
-  display: block;
-} */
-
-#header div {
-  display: none;
-}
-
-#header .logo {
-  font-size: 30px;
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-  font-weight: 500;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-left: 15px;
-}
-
 #header .logo img {
   width: 200px;
 }
 
-#header nav a {
-  font-family: avo;
+#header>nav {
+  display: none !important;
+}
+
+#header.header-scrolled, #header.header-inner-pages {
+  background: #0F1232;
 }
 
 /*--------------------------------------------------------------
@@ -187,8 +164,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 27px;
   font-weight: 700;
   color: #fff;
-  white-space: nowrap;
-  transition: 0.3s;
+  font-family: avo;
 }
 
 .navbar a i {
@@ -280,26 +256,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/**
-* Mobile Navigation 
-*/
-.mobile-nav-toggle {
-  color: #fff;
-  font-size: 28px;
-  cursor: pointer;
-  display: none;
-  line-height: 0;
-  transition: 0.5s;
-}
-
-.mobile-nav-toggle.bi-x {
-  color: #fff;
-}
-
 @media (max-width: 991px) {
-  .mobile-nav-toggle {
-    display: block;
-  }
   .navbar ul {
     display: none;
   }
@@ -310,26 +267,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 768px) {
-  /* .mobile-nav-toggle {
-    display: block;
-  } */
   #header {
     padding: 0;
-  }
-  #header.header-scrolled a.logo {
-    display: none;
-  }
-  
-  #header.header-scrolled div {
-    display: block;
   }
   #header .logo {
     margin: 0 auto;
     margin-top: 5px;
   }
-  .navbar ul {
+  #header.header-scrolled a.logo {
     display: none;
   }
+  #header.header-scrolled >nav {
+    display: flex !important;
+  }
+
   #hero-img {
     display: none !important;
   }
@@ -338,11 +289,11 @@ h1, h2, h3, h4, h5, h6 {
   }
   #hero h1 {
     width: 380px !important;
-    height: auto !important;
+    top: 55% !important;
   }
   #hero .down-arrow {
     width: 34px !important;
-    top: 85% !important;
+    bottom: 20px !important;
   }
   .footer-bottom {
     flex-direction: column;
@@ -411,86 +362,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-
-.navbar-mobile {
-  position: fixed;
-  overflow: hidden;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background: rgba(40, 58, 90, 0.9);
-  transition: 0.3s;
-  z-index: 999;
-}
-
-.navbar-mobile .mobile-nav-toggle {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-}
-
-.navbar-mobile ul {
-  display: block;
-  position: absolute;
-  top: 55px;
-  right: 15px;
-  /* bottom: 15px; */
-  left: 15px;
-  padding: 10px 0;
-  border-radius: 10px;
-  background-color: #fff;
-  overflow-y: auto;
-  transition: 0.3s;
-}
-
-.navbar-mobile a {
-  padding: 10px 20px;
-  font-size: 15px;
-  color: #37517e;
-}
-
-.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #47b2e4;
-}
-
-.navbar-mobile .getstarted {
-  margin: 15px;
-  color: #37517e;
-}
-
-.navbar-mobile .dropdown ul {
-  position: static;
-  display: none;
-  margin: 10px 20px;
-  padding: 10px 0;
-  z-index: 99;
-  opacity: 1;
-  visibility: visible;
-  background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-}
-
-.navbar-mobile .dropdown ul li {
-  min-width: 200px;
-}
-
-.navbar-mobile .dropdown ul a {
-  padding: 10px 20px;
-}
-
-.navbar-mobile .dropdown ul a i {
-  font-size: 12px;
-}
-
-.navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-  color: #47b2e4;
-}
-
-.navbar-mobile .dropdown > .dropdown-active {
-  display: block;
-}
-
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -508,7 +379,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero .down-arrow {
   position: absolute;
   width: 44px;
-  top: 80%;
+  bottom: 44px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -516,9 +387,8 @@ h1, h2, h3, h4, h5, h6 {
 #hero h1 {
   position: absolute;
   width: 715px;
-  height: 138px;
   text-align: center; 
-  top: 55%; 
+  top: 50%; 
   left: 50%; 
   transform: translate(-50%, -50%);
   color: #fff;
@@ -552,7 +422,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 768px) {
   #hero h1 {
     font-size: 28px;
-    line-height: 36px;
+    line-height: 32px;
   }
   #hero h2 {
     font-size: 18px;
