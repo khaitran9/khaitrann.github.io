@@ -247,6 +247,24 @@ h1, h2, h3, h4, h5, h6 {
   visibility: visible;
 }
 
+.nav-link {
+  padding: 0
+}
+
+#box_info_container {
+  display: flex; 
+  align-items: center;
+}
+
+#box_info_container .comment {
+  font-family: Times New Roman;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  flex: 1; 
+}
+
 @media (max-width: 1366px) {
   .navbar .dropdown .dropdown ul {
     left: -90%;
@@ -295,6 +313,35 @@ h1, h2, h3, h4, h5, h6 {
     width: 34px !important;
     bottom: 20px !important;
   }
+
+  #comments {
+    display: none;
+  }
+  
+  #box_info_container {
+    flex-direction: column;
+  }
+  #box_info {
+    width: 302px !important;
+    height: 195px !important;
+  }
+  #tekcom-logo {
+    margin-top: 30px !important;
+  }
+  .portfolio-details {
+    display: block !important;
+    padding: 30px 0 !important;
+  }
+  #box_info_container .double_quote {
+    margin-bottom: 0 !important;
+  }
+  #box_info_container .comment {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+  
+
   .footer-bottom {
     flex-direction: column;
     height: auto !important;
@@ -318,26 +365,8 @@ h1, h2, h3, h4, h5, h6 {
   #footer {
     padding: 0 !important;
   }
-  #comments {
-    display: none;
-  }
-  #portfolio-details {
-    display: block;
-  }
-  #box_info {
-    width: 302px !important;
-    height: 195px !important;
-  }
-  #tekcom-logo {
-    margin-top: 30px !important;
-  }
-  .portfolio-details {
-    padding-top: 20px !important;
-  }
   
-  .box_info_container {
-    flex-direction: column;
-  }
+  
   #library .section-title {
     padding: 40px 0 !important;
   }
@@ -367,8 +396,6 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  /* height: 80vh; */
-  /* background: #37517e; */
 }
 
 #hero .container-fluid {
@@ -1002,11 +1029,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #47b2e4;
+  border: 1px solid #0F1232;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #47b2e4;
+  background-color: #0F1232;
 }
 
 .portfolio-details .portfolio-info {
@@ -1797,16 +1824,41 @@ section {
 }
 
 #box_info {
+  position: relative;
   width: 428px;
   height: 275px;
-  /* left: 174px;
-  top: 1034px; */
-  background: #0F1232;
   text-align: center;
+  background-image: url('../img/Slice6.png');
+  background-size: 428px 275px;
+  background-repeat: no-repeat;
 }
 
 #tekcom-logo {
   margin-top: 50px;
+}
+
+#box_info .name {
+  font-family: Times New Roman;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px; 
+  color: #fff; 
+  margin-bottom: 10px;
+}
+
+#box_info .role {
+  font-family: Times New Roman;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20.7px; 
+  color: #fff
+}
+
+.double_quote {
+  padding: 20px; 
+  margin-bottom: 30px;
 }
 
 input:focus{
