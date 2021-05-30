@@ -318,6 +318,20 @@ h1, h2, h3, h4, h5, h6 {
   /* margin: 0 auto; */
 }
 
+#discover {
+  width: 245px;
+  height: 50px;
+  background: #0F1232; 
+  font-family: Times New Roman;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 50px 0;
+}
+
 @media (max-width: 768px) {
   #header {
     padding: 0;
@@ -400,6 +414,10 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 22px;
   }
 
+  .services_padding .row {
+    margin-top: 20px !important;
+  }
+
   .footer-bottom {
     flex-direction: column;
     height: auto !important;
@@ -425,12 +443,19 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 20px !important;
   }
 
+  .back-to-top {
+    right: 20px !important;
+    bottom: 200px !important;
+  }
+
   .back-to-top img {
     width: 60px;
     height: 54px;
   }
 
   #discover {
+    width: 279px !important;
+    height: 56px !important;
     margin-bottom: 100px !important;
   }
 }
@@ -582,6 +607,38 @@ section {
   font-size: 34px;
   line-height: 39px;
   margin-bottom: 60px;
+}
+
+#library .section-title {
+  font-family: Times New Roman;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 39px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+#library .section-title h2 {
+  color: #0F1232;
+  padding-bottom: 0;
+}
+
+.search_string {
+  width: 100%;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
+  padding: 10px 0;
+  background: transparent;
+  margin-top: 30px;
+  font-family: Times New Roman;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 111.49%;
+  color: #707070;
 }
 
 /*--------------------------------------------------------------
@@ -1909,7 +1966,7 @@ input:focus{
 }
 
 
-.testhover {
+.document {
   padding: 32px 0;
   height: 100px;
   position: relative;
@@ -1917,8 +1974,26 @@ input:focus{
   -webkit-transition: height 0.5s;
   overflow: hidden;
 }
-.testhover:hover {
-  height: 350px;
+.document:hover {
+  height: fit-content;
   padding: 32px 20px;
   background-color: #fff;
+}
+
+.document .title {
+  font-family: Times New Roman;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #0F1232;
+}
+.document span {
+  font-family: Times New Roman; 
+  margin-top: 25px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #4D4D4D;
 }
