@@ -346,6 +346,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   .footer-bottom {
     flex-direction: column;
+    height: auto !important;
   }
   .logo-bottom {
     display: none;
@@ -361,7 +362,7 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 30px !important;
   }
   #services .row {
-    margin: 0 !important;
+    padding-top: 0 !important;
   }
   #footer {
     padding: 0 !important;
@@ -371,6 +372,16 @@ h1, h2, h3, h4, h5, h6 {
   }
   #portfolio-details {
     display: block;
+  }
+  #box_info {
+    width: 302px !important;
+    height: 195px !important;
+  }
+  #tekcom-logo {
+    margin-top: 30px !important;
+  }
+  .portfolio-details {
+    padding-top: 20px !important;
   }
   
   .box_info_container {
