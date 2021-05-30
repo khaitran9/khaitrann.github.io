@@ -301,7 +301,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 30px;
   line-height: 34px;
   color: #D8BA8F;
-  margin-top: 20px;
+  margin: 20px 0;
 }
 
 .services-box p {
