@@ -256,6 +256,10 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 
+.document1_mobile {
+  display: none;
+}
+
 #box_info_container .comment {
   font-family: Times New Roman;
   font-style: normal;
@@ -368,6 +372,12 @@ h1, h2, h3, h4, h5, h6 {
 
   #comments {
     display: none;
+  }
+  .document1_desktop {
+    display: none !important;
+  }
+  .document1_mobile {
+    display: block !important;
   }
   
   #box_info_container {
