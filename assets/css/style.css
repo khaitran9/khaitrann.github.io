@@ -256,10 +256,6 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 
-.document1_mobile {
-  display: none;
-}
-
 #box_info_container .comment {
   font-family: Times New Roman;
   font-style: normal;
@@ -373,12 +369,6 @@ h1, h2, h3, h4, h5, h6 {
   #comments {
     display: none;
   }
-  .document1_desktop {
-    display: none !important;
-  }
-  .document1_mobile {
-    display: block !important;
-  }
   
   #box_info_container {
     flex-direction: column;
@@ -409,7 +399,6 @@ h1, h2, h3, h4, h5, h6 {
   }
   .services-box {
     left: 0 !important;
-    margin-left: 0 !important;
   }
   .services_padding {
     padding: 0 !important;
@@ -429,10 +418,6 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 22px;
   }
 
-  .services_padding .row {
-    margin-top: 20px !important;
-  }
-
   .footer-bottom {
     flex-direction: column;
     height: auto !important;
@@ -444,7 +429,16 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 !important;
   }
   
-  
+  .pinned_lib {
+    padding: 32px 20px !important;
+  }
+  .pinned_lib .title {
+    font-size: 19px !important;
+  }
+  .pinned_lib .content {
+    font-size: 18px !important;
+    line-height: 19.2px !important;
+  }
   #library .section-title {
     padding: 40px 0 !important;
   }
@@ -969,6 +963,7 @@ section {
 .services .icon-box {
   padding: 50px;
   transition: all ease-in-out 0.4s;
+  height: 250px;
 }
 
 .services .icon-box .icon {
@@ -2081,4 +2076,8 @@ input:focus{
 
 #qr_code {
   width: 130px;
+}
+
+.pinned_lib {
+  padding: 150px 50px;
 }
