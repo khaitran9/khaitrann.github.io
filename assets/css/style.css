@@ -117,8 +117,8 @@ h1, h2, h3, h4, h5, h6 {
 #header {
   transition: all 0.5s;
   z-index: 997;
-  padding-top: 42px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 5px;
 }
 
 #header .logo img {
@@ -262,8 +262,14 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
+  text-align: justify;
   flex: 1; 
-  padding: 0 40px;
+  padding: 0 0 0 30px;
+}
+
+.carousel-control-next {
+  width: 166px;
+  margin-left: -57px;
 }
 
 @media (max-width: 1366px) {
@@ -309,7 +315,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Times New Roman;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 22px;
   color: #FFFFFF;
 }
@@ -389,9 +395,16 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 0 !important;
   }
   #box_info_container .comment {
+    padding: 0 !important;
     font-size: 18px;
     line-height: 22px;
     text-align: justify;
+  }
+  .double_quote {
+    padding: 20px !important;
+  }
+  .carousel-control-next {
+    margin-left: 0 !important;
   }
   
   .services {
@@ -410,11 +423,11 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 0 !important;
   }
   .services-box h4 {
-    font-size: 20px;
+    font-size: 22px;
     line-height: 23px;
   }
   .services-box p {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 22px;
   }
 
@@ -428,6 +441,9 @@ h1, h2, h3, h4, h5, h6 {
   #footer {
     padding: 0 !important;
   }
+  .info_container {
+    padding: 0 20px !important;
+  }
   
   .pinned_lib {
     padding: 32px 20px !important;
@@ -437,7 +453,6 @@ h1, h2, h3, h4, h5, h6 {
   }
   .pinned_lib .content {
     font-size: 18px !important;
-    line-height: 19.2px !important;
   }
   #library .section-title {
     padding: 40px 0 !important;
@@ -451,12 +466,18 @@ h1, h2, h3, h4, h5, h6 {
   #library .services_padding {
     padding: 0 20px !important;
   }
+  .document {
+    height: 110px !important;
+  }
+  .document:hover {
+    height: fit-content !important;
+  }
   .document .title {
     font-size: 19px !important;
   }
   .document .content {
     font-size: 18px !important;
-    line-height: 19.2px !important;
+    line-height: 22px !important;
   }
 
   .back-to-top {
@@ -484,14 +505,14 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .footer-bottom .add_title {
-    font-size: 18px !important;
+    font-size: 22px !important;
     line-height: 24px !important;
   }
   .footer-bottom .add_info {
     font-size: 13px !important;
   }
   .footer-bottom .other {
-    font-size: 13px !important;
+    font-size: 18px !important;
   }
 }
 
@@ -634,14 +655,13 @@ section {
 #services .section-title {
   width: 100%; 
   text-align: center; 
-  padding-top: 100px;
+  padding: 80px 0 60px 0;
   height: 40px;
   font-family: Times New Roman;
   font-style: normal;
   font-weight: bold;
   font-size: 34px;
   line-height: 39px;
-  margin-bottom: 60px;
 }
 
 #library .section-title {
@@ -1214,9 +1234,9 @@ section {
 --------------------------------------------------------------*/
 .team .member {
   position: relative;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1); */
   padding: 30px;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   background: #fff;
   transition: 0.5s;
 }
@@ -1929,7 +1949,7 @@ section {
   font-family: Times New Roman;
   font-style: normal;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 23px;
   margin-bottom: 10px; 
   text-align: left;
@@ -1949,7 +1969,7 @@ section {
   font-family: Times New Roman;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 111.49%;
 }
 
@@ -1999,8 +2019,8 @@ section {
 
 #box_info {
   position: relative;
-  width: 428px;
-  height: 275px;
+  width: 400px;
+  height: 257px;
   text-align: center;
   background-image: url('../img/Slice6.png');
   background-size: 428px 275px;
@@ -2032,7 +2052,7 @@ section {
 
 .double_quote {
   margin-left: 40px;
-  padding: 20px; 
+  /* padding: 20px;  */
   margin-bottom: 30px;
 }
 
@@ -2043,7 +2063,7 @@ input:focus{
 
 .document {
   padding: 32px 0;
-  height: 100px;
+  height: 104px;
   position: relative;
   transition: height 0.5s;
   -webkit-transition: height 0.5s;
@@ -2051,6 +2071,7 @@ input:focus{
 }
 .document:hover {
   height: fit-content;
+  height: -moz-fit-content;
   padding: 32px 20px;
   background-color: #fff;
 }
@@ -2062,7 +2083,7 @@ input:focus{
   font-size: 18px;
   line-height: 21px;
   color: #0F1232;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .document .content {
   font-family: Times New Roman; 
@@ -2079,5 +2100,5 @@ input:focus{
 }
 
 .pinned_lib {
-  padding: 150px 50px;
+  padding: 120px 50px;
 }
